@@ -4,6 +4,7 @@ import './lc-header.js';
 import './lc-main.js';
 import './lc-footer.js';
 import './lc-table-of-content.js';
+import './lc-toc-fab.js';
 
 @customElement('lc-layout')
 export class LcLayout extends LitElement {
@@ -15,15 +16,35 @@ export class LcLayout extends LitElement {
       box-sizing: border-box;
     }
   `;
+
+  private _onTocLinkClick(e: CustomEvent) {
+    const id = e.detail.id;
+    const main = this.renderRoot.querySelector('lc-main') as HTMLElement & { shadowRoot: ShadowRoot };
+    if (main && main.shadowRoot) {
+      const el = main.shadowRoot.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
+  private _onTocFabClick() {
+    const toc = this.renderRoot.querySelector('lc-table-of-content') as HTMLElement;
+    if (toc) {
+      toc.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   render() {
     return html`
-      <div class="container">
+      <div class="container" @toc-link-click=${this._onTocLinkClick} @toc-fab-click=${this._onTocFabClick}>
         <lc-header></lc-header>
         <lc-table-of-content></lc-table-of-content>
         <lc-main>
           <p>Fundamentos de Web Components y Lit</p>
         </lc-main>
         <lc-footer></lc-footer>
+        <lc-toc-fab></lc-toc-fab>
       </div>
     `;
   }
