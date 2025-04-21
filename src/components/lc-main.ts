@@ -16,6 +16,7 @@ import { componentesCicloVidaSection } from '../sections/componentes-ciclo-vida'
 import { componentesShadowDomSection } from '../sections/componentes-shadow-dom';
 import { componentesEventosSection } from '../sections/componentes-eventos';
 import { componentesDecoradoresSection } from '../sections/componentes-decoradores';
+import { componentesPropiedadesReactivasSection } from '../sections/componentes-propiedades';
 import { plantillasSection } from '../sections/plantillas';
 import { expresionesPlantillasSection } from '../sections/expresiones-plantillas';
 import { condicionalesPlantillasSection } from '../sections/condicionales-plantillas';
@@ -112,6 +113,9 @@ export class LcMain extends LitElement {
         </lc-section>
         <lc-section id="componentes-decoradores">
           ${componentesDecoradoresSection}
+        </lc-section>
+        <lc-section id="componentes-propiedades-reactivas">
+          ${componentesPropiedadesReactivasSection}
         </lc-section>
         <lc-section id="plantillas">
           ${plantillasSection}

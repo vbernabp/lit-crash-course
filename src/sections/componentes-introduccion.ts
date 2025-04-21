@@ -10,5 +10,19 @@ export const componentesIntroduccionSection = html`
     <li>Estilos: un componente puede definir estilos encapsulados para controlar su propia apariencia.</li>
     <li>Ciclo de vida: Lit define un conjunto de callbacks que se pueden sobrescribir para engancharse al ciclo de vida del componente, por ejemplo, para ejecutar código cuando el elemento se añade a la página o cuando el componente se actualiza.</li>
   </ul>
+  <iframe
+    height="400"
+    style="width: 100%;"
+    scrolling="no"
+    title="Lit - Hola Mundo"
+    src="https://codepen.io/victorbernabeperez/embed/jEEPPLd?default-tab=js%2Cresult&editable=true"
+    frameborder="no"
+    loading="lazy"
+    allowtransparency="true"
+  >
+    See the Pen <a href="https://codepen.io/victorbernabeperez/pen/jEEPPLd">
+    Lit - Hola Mundo</a> by Victor Bernabe Perez (<a href="https://codepen.io/victorbernabeperez">@victorbernabeperez</a>)
+    on <a href="https://codepen.io">CodePen</a>.
+  </iframe>
   <a href="https://lit.dev/docs/components/overview/" target="_blank">2.3.1 Leer más sobre componentes en Lit</a>
 `
