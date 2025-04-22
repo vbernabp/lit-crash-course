@@ -5,5 +5,5 @@ export const componentesDecoradoresSection = html`
   <p>Algunos decoradores integrados de Lit son: @customElement para registrar un custom element, @property y @state para definir propiedades reactivas, y @query, @queryAll, @queryAsync, @queryAssignedElements y @queryAssignedNodes para acceder a nodos del shadow DOM. El decorador @eventOptions permite configurar opciones avanzadas en listeners de eventos.</p>
   <p>Los decoradores pueden importarse desde 'lit/decorators.js' o individualmente. Para usarlos es necesario compilar el código con TypeScript o Babel, ya que los navegadores aún no los soportan de forma nativa. Se recomienda usar decoradores experimentales de TypeScript para un mejor resultado en la compilación.</p>
   <p>Lit soporta tanto la versión experimental como la estándar de la propuesta de decoradores en JavaScript. La versión estándar requiere el uso de la palabra clave accessor en las propiedades decoradas.</p>
-  <a href="https://lit.dev/docs/components/decorators/" target="_blank">2.3.9 Leer más sobre decoradores en Lit</a>
+  <a href="https://lit.dev/docs/components/decorators/" target="_blank">Más información sobre decoradores</a>
 `

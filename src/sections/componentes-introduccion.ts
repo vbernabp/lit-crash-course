@@ -24,5 +24,5 @@ export const componentesIntroduccionSection = html`
     Lit - Hola Mundo</a> by Victor Bernabe Perez (<a href="https://codepen.io/victorbernabeperez">@victorbernabeperez</a>)
     on <a href="https://codepen.io">CodePen</a>.
   </iframe>
-  <a href="https://lit.dev/docs/components/overview/" target="_blank">2.3.1 Leer más sobre componentes en Lit</a>
+  <a href="https://lit.dev/docs/components/overview/" target="_blank">Más información sobre componentes</a>
 `

@@ -65,4 +65,5 @@ export const litVsStencilSection = html`
     <li>Si tu objetivo es crear librerías de componentes para ser usadas en múltiples frameworks (Angular, React, Vue, etc.).</li>
     <li>Recomendado para grandes organizaciones o design systems complejos.</li>
   </ul>
+  <a href="https://lit.dev/docs/composition/mixins/" target="_blank">Más información sobre Lit vs Stencil</a>
 `

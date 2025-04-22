@@ -6,5 +6,5 @@ export const componentesEstilosSection = html`
   <p>También es posible definir estilos dentro de la plantilla usando un elemento &lt;style&gt;, aunque esto solo se recomienda para casos donde se necesiten estilos personalizados por instancia.</p>
   <p>Para personalizar estilos de forma dinámica, se pueden usar variables CSS (custom properties) y los selectores :host y :host(). Además, Lit ofrece directivas como classMap y styleMap para aplicar clases y estilos dinámicos en la plantilla.</p>
   <p>El uso de CSS custom properties facilita la creación de componentes tematizables y la personalización de estilos desde fuera del componente.</p>
-  <a href="https://lit.dev/docs/components/styles/" target="_blank">2.3.5 Leer más sobre estilos en Lit</a>
+  <a href="https://lit.dev/docs/components/styles/" target="_blank">Más información sobre estilos</a>
 `

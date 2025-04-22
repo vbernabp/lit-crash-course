@@ -6,5 +6,5 @@ export const composicionComponentesSection = html`
   <p>La comunicación entre componentes sigue el modelo de la plataforma web: las propiedades se pasan hacia abajo (del componente padre al hijo) y los eventos se envían hacia arriba (del hijo al padre). Así, los datos fluyen de padres a hijos mediante propiedades, y los cambios o acciones se notifican hacia arriba mediante eventos.</p>
   <p>Para comunicar datos entre componentes que no son padre e hijo directo, se puede usar el patrón mediador, donde un componente intermedio gestiona los eventos y actualiza el estado de los componentes implicados.</p>
   <p>Además, los componentes pueden aceptar nodos hijos (light DOM) que se renderizan mediante slots, permitiendo una mayor flexibilidad y personalización.</p>
-  <a href="https://lit.dev/docs/composition/component-composition/" target="_blank">2.5.2 Leer más sobre composición de componentes en Lit</a>
+  <a href="https://lit.dev/docs/composition/component-composition/" target="_blank">Más información sobre composición de componentes</a>
 `

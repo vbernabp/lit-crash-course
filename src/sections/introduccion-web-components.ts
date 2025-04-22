@@ -8,5 +8,5 @@ export const introduccionWebComponents = html`
     <li>Shadow DOM: encapsula el DOM y los estilos de un componente.</li>
     <li>HTML Templates: define fragmentos de HTML reutilizables y no renderizados hasta ser usados.</li>
   </ul>
-  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components" target="_blank">1. Leer más en MDN</a>
+  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components" target="_blank">Más información sobre Web Components</a>
 `

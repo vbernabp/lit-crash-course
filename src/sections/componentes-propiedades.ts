@@ -19,5 +19,5 @@ export const componentesPropiedadesReactivasSection = html`
     Lit - Propiedades</a> by Victor Bernabe Perez (<a href="https://codepen.io/victorbernabeperez">@victorbernabeperez</a>)
     on <a href="https://codepen.io">CodePen</a>.
   </iframe>
-  <p><a href="https://lit.dev/docs/components/properties/" target="_blank" rel="noopener">Más información en la documentación oficial de Lit sobre propiedades reactivas</a></p>
+  <p><a href="https://lit.dev/docs/components/properties/" target="_blank" rel="noopener">Más información sobre propiedades reactivas</a></p>
 `;

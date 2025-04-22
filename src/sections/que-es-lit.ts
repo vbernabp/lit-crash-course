@@ -22,5 +22,5 @@ export const queEsLitSection = html`
     <li>Componentes reutilizables en cualquier app o sitio, incluso en diferentes stacks.</li>
     <li>Perfecto para mejorar progresivamente sitios HTML básicos o construir aplicaciones ricas e interactivas.</li>
   </ul>
-  <a href="https://lit.dev/docs/" target="_blank">2.1 Leer más en la documentación oficial de Lit</a>
+  <a href="https://lit.dev/docs/" target="_blank">Más información sobre Lit</a>
 `

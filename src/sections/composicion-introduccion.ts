@@ -6,5 +6,5 @@ export const composicionIntroduccionSection = html`
   <p>Los controladores reactivos permiten encapsular estado y comportamiento relacionado con una funcionalidad en una unidad separada, que puede engancharse al ciclo de vida del componente.</p>
   <p>Los mixins de clase permiten escribir definiciones parciales reutilizables y mezclarlas en la cadena de herencia de un componente.</p>
   <p>En general, se recomienda usar controladores salvo que se necesite añadir API pública al componente o un acceso muy granular al ciclo de vida.</p>
-  <a href="https://lit.dev/docs/composition/overview/" target="_blank">2.5.1 Leer más sobre composición en Lit</a>
+  <a href="https://lit.dev/docs/composition/overview/" target="_blank">Más información sobre composición</a>
 `

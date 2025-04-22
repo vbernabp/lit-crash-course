@@ -6,5 +6,5 @@ export const componentesEventosSection = html`
   <p>Se pueden personalizar las opciones de los listeners usando el decorador @eventOptions. También es posible escuchar eventos en elementos hijos, en el propio componente o en el shadow root, y aprovechar la delegación de eventos para optimizar el rendimiento.</p>
   <p>Para emitir eventos personalizados, se utiliza dispatchEvent con instancias de CustomEvent. Es importante configurar correctamente las opciones de burbujeo y composición para que los eventos puedan atravesar el shadow DOM y ser escuchados desde el exterior.</p>
   <p>Lit facilita la comunicación entre componentes y la integración con otras partes de la aplicación mediante el uso de eventos estándar y personalizados.</p>
-  <a href="https://lit.dev/docs/components/events/" target="_blank">2.3.8 Leer más sobre eventos en Lit</a>
+  <a href="https://lit.dev/docs/components/events/" target="_blank">Más información sobre eventos</a>
 `

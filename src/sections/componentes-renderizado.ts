@@ -21,5 +21,5 @@ export const componentesRenderizadoSection = html`
     Lit - Composición</a> by Victor Bernabe Perez (<a href="https://codepen.io/victorbernabeperez">@victorbernabeperez</a>)
     on <a href="https://codepen.io">CodePen</a>.
   </iframe>
-  <a href="https://lit.dev/docs/components/rendering/" target="_blank">2.3.3 Leer más sobre renderizado en Lit</a>
+  <a href="https://lit.dev/docs/components/rendering/" target="_blank">Más información sobre renderizado</a>
 `

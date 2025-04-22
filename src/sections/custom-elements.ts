@@ -1,6 +1,12 @@
 import { html } from 'lit'
+import '../components/lc-question';
+
 export const customElementsSection = html`
   <h3>1.1 Custom Elements</h3>
   <p>Permiten crear etiquetas HTML personalizadas. Se definen extendiendo HTMLElement y registrando el elemento en el navegador. Los custom elements disponen de callbacks de ciclo de vida que permiten reaccionar a su inserción, eliminación o cambios de atributos. Son la base para crear componentes reutilizables y encapsulados en cualquier aplicación web.</p>
-  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components/Using_custom_elements" target="_blank">1.1 Leer más en MDN</a>
+  <p>El nombre de un custom element debe estar formado por al menos dos palabras separadas por un guion (<code>-</code>), como <code>mi-componente</code> o <code>user-card</code>.</p>
+  <lc-question question="¿Dónde se puede ver un ejemplo de un Custom Element?">
+    <p>Este componente es un Custom Element: <code>&lt;lc-question&gt;</code>.</p>
+  </lc-question>
+  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components/Using_custom_elements" target="_blank">Más información sobre Custom Elements</a>
 `
