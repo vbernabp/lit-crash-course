@@ -99,6 +99,9 @@ export class LcMain extends LitElement {
         <lc-section id="componentes-renderizado">
           ${componentesRenderizadoSection}
         </lc-section>
+        <lc-section id="componentes-propiedades-reactivas">
+          ${componentesPropiedadesReactivasSection}
+        </lc-section>
         <lc-section id="componentes-estilos">
           ${componentesEstilosSection}
         </lc-section>
@@ -113,9 +116,6 @@ export class LcMain extends LitElement {
         </lc-section>
         <lc-section id="componentes-decoradores">
           ${componentesDecoradoresSection}
-        </lc-section>
-        <lc-section id="componentes-propiedades-reactivas">
-          ${componentesPropiedadesReactivasSection}
         </lc-section>
         <lc-section id="plantillas">
           ${plantillasSection}

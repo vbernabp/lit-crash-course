@@ -11,7 +11,6 @@ export class LcFooter extends LitElement {
   `;
 
   render() {
-    const year = new Date().getFullYear();
-    return html`<footer><p>&copy; ${year} NTT Data</p></footer>`;
+    return html`<footer><p>Fundamentos de Web Components y Lit</p></footer>`;
   }
 }
