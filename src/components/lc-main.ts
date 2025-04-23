@@ -46,6 +46,7 @@ import { ssrUsoClienteSection } from '../sections/ssr-uso-cliente';
 import { ssrAutoriaSection } from '../sections/ssr-autoria';
 import { ssrDomEmulacionSection } from '../sections/ssr-dom-emulacion';
 import { litVsStencilSection } from '../sections/lit-vs-stencil';
+import { preguntasRespuestasSection } from '../sections/preguntas-respuestas';
 import './lc-section';
 
 @customElement('lc-main')
@@ -203,6 +204,9 @@ export class LcMain extends LitElement {
         </lc-section>
         <lc-section id="lit-vs-stencil">
           ${litVsStencilSection}
+        </lc-section>
+        <lc-section id="preguntas-respuestas">
+          ${preguntasRespuestasSection}
         </lc-section>
       </main>
     `;

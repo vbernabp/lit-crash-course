@@ -46,6 +46,17 @@ export class LcQuestion extends LitElement {
       font-size: 1.1rem;
       font-weight: bold;
     }
+    .arrow {
+      transition: transform 0.2s;
+      width: 1.2rem;
+      height: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    details[open] .arrow {
+      transform: rotate(90deg);
+    }
     .answer {
       margin-top: 1rem;
       font-size: 1rem;
@@ -62,7 +73,15 @@ export class LcQuestion extends LitElement {
   render() {
     return html`
       <details>
-        <summary><span class="icon">?</span>${this.question}</summary>
+        <summary>
+          <span class="icon">?</span>
+          <span class="arrow">
+            <svg viewBox="0 0 16 16" width="1em" height="1em" fill="currentColor">
+              <polygon points="5,3 13,8 5,13" />
+            </svg>
+          </span>
+          ${this.question}
+        </summary>
         <div class="answer"><slot>${this.answer}</slot></div>
       </details>
     `

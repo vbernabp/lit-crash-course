@@ -3,7 +3,7 @@ import { customElement } from 'lit/decorators.js';
 
 @customElement('lc-footer')
 export class LcFooter extends LitElement {
-  static styles = css`
+  public static readonly styles = css`
     footer {
       padding: 1rem;
       text-align: center;

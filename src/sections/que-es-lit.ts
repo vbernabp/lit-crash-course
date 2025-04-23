@@ -22,13 +22,14 @@ export const queEsLitSection = html`
     <li>Ligero: tamaño muy reducido.</li>
     <li>Flexible: fácil de integrar con otros componentes o frameworks, y permite migraciones progresivas.</li>
     <li>Componentes reutilizables en cualquier app o sitio, incluso en diferentes stacks.</li>
-    <li>Perfecto para mejorar progresivamente sitios HTML básicos o construir aplicaciones ricas e interactivas.</li>
   </ul>
   <lc-note>
     <p>El componente lc-footer es un ejemplo sencillo de Web Component hecho con Lit.</p>
   </lc-note>
-  <lc-question question="¿Cómo funcionan los métodos html y css?">
+  <div>
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates" target="_blank">Tagged Templates</a>
-  </lc-question>
-  <a href="https://lit.dev/docs/" target="_blank">Más información sobre Lit</a>
+  </div>
+  <div>
+    <a href="https://lit.dev/docs/" target="_blank">Más información sobre Lit</a>
+  </div>
 `

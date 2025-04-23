@@ -90,6 +90,7 @@ export class LcTableOfContent extends LitElement {
           <li class="indent indent2"><a href="#internacionalizacion-cli-config" @click=${this._onLinkClick}>2.10.4 CLI y Configuración</a></li>
           <li class="indent indent2"><a href="#internacionalizacion-best-practices" @click=${this._onLinkClick}>2.10.5 Buenas prácticas</a></li>
           <li><a href="#lit-vs-stencil" @click=${this._onLinkClick}>3. Lit vs Stencil</a></li>
+          <li><a href="#preguntas-respuestas" @click=${this._onLinkClick}>4. Preguntas y Respuestas</a></li>
         </ul>
       </nav>
     `;

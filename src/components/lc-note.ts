@@ -3,6 +3,7 @@ import { customElement, property } from 'lit/decorators.js'
 
 @customElement('lc-note')
 export class LcNote extends LitElement {
+  public static readonly shadowRootOptions = { ...LitElement.shadowRootOptions, mode: 'closed' as ShadowRootMode };
   @property({ type: String }) note = '';
 
   public static readonly styles = css`
@@ -11,8 +12,8 @@ export class LcNote extends LitElement {
       margin: 2rem 0;
     }
     .note-panel {
-      background: #f6f3fa;
-      border-left: 4px solid #8e24aa;
+      background: #f5f7fa;
+      border-left: 4px solid #1976d2;
       border-radius: 8px;
       box-shadow: 0 2px 8px #0001;
       padding: 0.75rem 1rem;
@@ -27,7 +28,7 @@ export class LcNote extends LitElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #8e24aa;
+      background: #1976d2;
       color: #fff;
       border-radius: 50%;
       font-size: 1.1rem;
@@ -36,7 +37,7 @@ export class LcNote extends LitElement {
     .content {
       font-size: 1rem;
       line-height: 1.6;
-      color: #8e24aa;
+      color: #1976d2;
       font-weight: 600;
       flex: 1;
     }
