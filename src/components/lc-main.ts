@@ -8,7 +8,6 @@ import { litSection } from '../sections/lit';
 import { queEsLitSection } from '../sections/que-es-lit';
 import { primerosPasosSection } from '../sections/primeros-pasos';
 import { componentesSection } from '../sections/componentes';
-import { componentesIntroduccionSection } from '../sections/componentes-introduccion';
 import { componentesDefinicionSection } from '../sections/componentes-definicion';
 import { componentesRenderizadoSection } from '../sections/componentes-renderizado';
 import { componentesEstilosSection } from '../sections/componentes-estilos';
@@ -90,9 +89,6 @@ export class LcMain extends LitElement {
         </lc-section>
         <lc-section id="componentes">
           ${componentesSection}
-        </lc-section>
-        <lc-section id="componentes-introduccion">
-          ${componentesIntroduccionSection}
         </lc-section>
         <lc-section id="componentes-definicion">
           ${componentesDefinicionSection}

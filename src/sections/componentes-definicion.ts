@@ -2,13 +2,13 @@ import { html } from 'lit'
 import '../components/lc-code'
 
 export const componentesDefinicionSection = html`
-  <h4>2.3.2 Definición de un componente</h4>
+  <h4>2.3.1 Definición de un componente</h4>
   <p>Para definir un componente Lit, se crea una clase que extiende de LitElement y se registra la clase como un custom element en el navegador. El decorador @customElement es una forma abreviada de registrar el elemento, asociando la clase a un nombre de etiqueta personalizado.</p>
   <lc-code>
     <pre><code>@customElement('simple-greeting')
 export class SimpleGreeting extends LitElement { /* ... */ }</code></pre>
   </lc-code>
-  <p>También se puede definir un componente haciendo uso del método define del objeto customElements.</p>
+  <p>Usando JavaScript, se puede definir un componente haciendo uso del método define del objeto customElements.</p>
   <lc-code>
     <pre><code>customElements.define('simple-greeting', SimpleGreeting)</code></pre>
   </lc-code>

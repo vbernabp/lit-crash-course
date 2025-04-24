@@ -51,7 +51,6 @@ export class LcTableOfContent extends LitElement {
               <li><a href="#primeros-pasos" @click=${this._onLinkClick}>Primeros pasos</a></li>
               <li><a href="#componentes" @click=${this._onLinkClick}>Componentes</a>
                 <ol>
-                  <li><a href="#componentes-introduccion" @click=${this._onLinkClick}>Introducción</a></li>
                   <li><a href="#componentes-definicion" @click=${this._onLinkClick}>Definición de un componente</a></li>
                   <li><a href="#componentes-renderizado" @click=${this._onLinkClick}>Renderizado</a></li>
                   <li><a href="#componentes-propiedades-reactivas" @click=${this._onLinkClick}>Propiedades Reactivas</a></li>

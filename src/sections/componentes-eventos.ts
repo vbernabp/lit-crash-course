@@ -1,6 +1,6 @@
 import { html } from 'lit'
 export const componentesEventosSection = html`
-  <h4>2.3.8 Eventos</h4>
+  <h4>2.3.7 Eventos</h4>
   <p>Los eventos son la forma estándar en la que los elementos comunican cambios, normalmente como resultado de la interacción del usuario. Además de los eventos estándar, los componentes Lit pueden emitir eventos personalizados para comunicar cambios o acciones específicas.</p>
   <p>Lit permite escuchar eventos tanto de forma imperativa usando addEventListener como de forma declarativa en la plantilla mediante la sintaxis @evento. Los listeners declarativos se añaden automáticamente al renderizar la plantilla y están ligados al contexto del componente.</p>
   <p>Se pueden personalizar las opciones de los listeners usando el decorador @eventOptions. También es posible escuchar eventos en elementos hijos, en el propio componente o en el shadow root, y aprovechar la delegación de eventos para optimizar el rendimiento.</p>
