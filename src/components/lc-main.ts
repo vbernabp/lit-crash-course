@@ -47,6 +47,7 @@ import { ssrDomEmulacionSection } from '../sections/ssr-dom-emulacion';
 import { litVsStencilSection } from '../sections/lit-vs-stencil';
 import { preguntasRespuestasSection } from '../sections/preguntas-respuestas';
 import './lc-section';
+import './lc-code'
 
 @customElement('lc-main')
 export class LcMain extends LitElement {

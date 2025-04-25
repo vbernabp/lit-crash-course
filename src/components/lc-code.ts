@@ -5,31 +5,20 @@ import { customElement } from 'lit/decorators.js'
 export class LcCode extends LitElement {
   public static readonly styles = css`
     :host {
-      display: block;
-      margin: 1.5rem 0;
-      background: #28282c;
-      border-radius: 8px;
-      overflow-x: auto;
-      box-shadow: 0 2px 8px #0002;
+      display: inline;
     }
-    ::slotted(pre) {
-      margin: 0;
-      padding: 1rem;
-      background: none;
-      color: #f8f8f2;
-      font-size: 0.9rem;
-      font-family: 'Fira Mono', 'Consolas', 'Monaco', monospace;
-      overflow-x: auto;
+    code {
+      font-family: monospace;
+      font-size: 1em;
+      background: #f5f7fa;
+      color: #222;
+      border-radius: 4px;
+      padding: 0.1em 0.4em;
+      margin: 0 0.1em;
+      line-height: 1.5;
     }
-    ::slotted(code) {
-      background: none;
-      color: inherit;
-      font-family: inherit;
-      font-size: inherit;
-      padding: 0;
-    }
-  `;
+  `
   render() {
-    return html`<slot></slot>`
+    return html`<code><slot></slot></code>`
   }
 }

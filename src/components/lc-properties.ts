@@ -5,11 +5,12 @@ import { customElement, property, state } from 'lit/decorators.js'
 export class LcProperties extends LitElement {
   @property({ type: String }) text = 'Hello'
   @property({ type: Number, reflect: true }) count = 0
-  @property({ type: Boolean, reflect: true }) active = false
+  @property({ type: Boolean, reflect: true }) active = true
   @property({ type: Array }) items: number[] = []
   @property({ type: Object }) config = { theme: 'light' }
   @property({ attribute: 'custom-attr' }) customName = 'custom'
   @property({
+    type: Array,
     converter: {
       fromAttribute: (value: string) => value ? value.split(',') : [],
       toAttribute: (value: string[]) => value.join(',')
@@ -21,6 +22,14 @@ export class LcProperties extends LitElement {
     }
   }) caseSensitive = 'A'
   @state() private internalState = 42
+  private _rounded = 0
+  @property({ type: Number })
+  set roundedCount(val: number) {
+    this._rounded = Math.floor(val)
+  }
+  get roundedCount() {
+    return this._rounded
+  }
 
   public static readonly styles = css`
     :host {
@@ -132,6 +141,16 @@ export class LcProperties extends LitElement {
     )
   }
 
+  private _setRounded() {
+    this.dispatchEvent(
+      new CustomEvent('set-rounded', {
+        detail: this.roundedCount + 2.7,
+        bubbles: true,
+        composed: true
+      })
+    )
+  }
+
   render() {
     return html`
       <div class="title">lc-properties</div>
@@ -179,6 +198,11 @@ export class LcProperties extends LitElement {
         <span class="desc">@state: estado interno reactivo</span>
         internalState: <b>${this.internalState}</b>
         <button @click=${() => this.internalState++}>+1</button>
+      </div>
+      <div class="row">
+        <span class="desc">@property: accessors personalizados (redondea hacia abajo)</span>
+        roundedCount: <b>${this.roundedCount}</b>
+        <button @click=${this._setRounded}>+2.7 (redondea)</button>
       </div>
     `
   }
