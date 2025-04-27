@@ -46,6 +46,12 @@ import { ssrAutoriaSection } from '../sections/ssr-autoria';
 import { ssrDomEmulacionSection } from '../sections/ssr-dom-emulacion';
 import { litVsStencilSection } from '../sections/lit-vs-stencil';
 import { preguntasRespuestasSection } from '../sections/preguntas-respuestas';
+import { internacionalizacionSection } from '../sections/internacionalizacion';
+import { internacionalizacionIntroduccionSection } from '../sections/internacionalizacion-introduccion';
+import { internacionalizacionRuntimeModeSection } from '../sections/internacionalizacion-runtime-mode';
+import { internacionalizacionTransformModeSection } from '../sections/internacionalizacion-transform-mode';
+import { internacionalizacionCliConfigSection } from '../sections/internacionalizacion-cli-config';
+import { internacionalizacionBestPracticesSection } from '../sections/internacionalizacion-best-practices';
 import './lc-section';
 import './lc-code'
 
@@ -198,6 +204,24 @@ export class LcMain extends LitElement {
         </lc-section>
         <lc-section id="ssr-dom-emulacion">
           ${ssrDomEmulacionSection}
+        </lc-section>
+        <lc-section id="internacionalizacion">
+          ${internacionalizacionSection}
+        </lc-section>
+        <lc-section id="internacionalizacion-introduccion">
+          ${internacionalizacionIntroduccionSection}
+        </lc-section>
+        <lc-section id="internacionalizacion-runtime-mode">
+          ${internacionalizacionRuntimeModeSection}
+        </lc-section>
+        <lc-section id="internacionalizacion-transform-mode">
+          ${internacionalizacionTransformModeSection}
+        </lc-section>
+        <lc-section id="internacionalizacion-cli-config">
+          ${internacionalizacionCliConfigSection}
+        </lc-section>
+        <lc-section id="internacionalizacion-best-practices">
+          ${internacionalizacionBestPracticesSection}
         </lc-section>
         <lc-section id="lit-vs-stencil">
           ${litVsStencilSection}

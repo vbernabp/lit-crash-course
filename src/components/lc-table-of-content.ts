@@ -94,29 +94,29 @@ export class LcTableOfContent extends LitElement {
                   <li><a href="#herramientas-plantillas-inicio" @click=${this._onLinkClick}>Plantillas de Inicio</a></li>
                 </ol>
               </li>
-            </ol>
-          </li>
-          <li><a href="#ssr" @click=${this._onLinkClick}>Renderizado en el Servidor</a>
-            <ol>
-              <li><a href="#ssr-introduccion" @click=${this._onLinkClick}>Introducción al Renderizado en el Servidor</a></li>
-              <li><a href="#ssr-uso-servidor" @click=${this._onLinkClick}>Uso en el Servidor</a></li>
-              <li><a href="#ssr-uso-cliente" @click=${this._onLinkClick}>Uso en el Cliente</a></li>
-              <li><a href="#ssr-autoria" @click=${this._onLinkClick}>Autoría</a></li>
-              <li><a href="#ssr-dom-emulacion" @click=${this._onLinkClick}>Emulación del DOM</a></li>
-            </ol>
-          </li>
-          <li><a href="#frameworks" @click=${this._onLinkClick}>Frameworks</a>
-            <ol>
-              <li><a href="#frameworks-react" @click=${this._onLinkClick}>React</a></li>
-            </ol>
-          </li>
-          <li><a href="#internacionalizacion" @click=${this._onLinkClick}>Internacionalización</a>
-            <ol>
-              <li><a href="#internacionalizacion-introduccion" @click=${this._onLinkClick}>Introducción</a></li>
-              <li><a href="#internacionalizacion-runtime-mode" @click=${this._onLinkClick}>Modo en Tiempo de Ejecución</a></li>
-              <li><a href="#internacionalizacion-transform-mode" @click=${this._onLinkClick}>Modo Transformación</a></li>
-              <li><a href="#internacionalizacion-cli-config" @click=${this._onLinkClick}>CLI y Configuración</a></li>
-              <li><a href="#internacionalizacion-best-practices" @click=${this._onLinkClick}>Buenas prácticas</a></li>
+              <li><a href="#ssr" @click=${this._onLinkClick}>Renderizado en el Servidor</a>
+                <ol>
+                  <li><a href="#ssr-introduccion" @click=${this._onLinkClick}>Introducción al Renderizado en el Servidor</a></li>
+                  <li><a href="#ssr-uso-servidor" @click=${this._onLinkClick}>Uso en el Servidor</a></li>
+                  <li><a href="#ssr-uso-cliente" @click=${this._onLinkClick}>Uso en el Cliente</a></li>
+                  <li><a href="#ssr-autoria" @click=${this._onLinkClick}>Autoría</a></li>
+                  <li><a href="#ssr-dom-emulacion" @click=${this._onLinkClick}>Emulación del DOM</a></li>
+                </ol>
+              </li>
+              <li><a href="#frameworks" @click=${this._onLinkClick}>Frameworks</a>
+                <ol>
+                  <li><a href="#frameworks-react" @click=${this._onLinkClick}>React</a></li>
+                </ol>
+              </li>
+              <li><a href="#internacionalizacion" @click=${this._onLinkClick}>Internacionalización</a>
+                <ol>
+                  <li><a href="#internacionalizacion-introduccion" @click=${this._onLinkClick}>Introducción</a></li>
+                  <li><a href="#internacionalizacion-runtime-mode" @click=${this._onLinkClick}>Modo en Tiempo de Ejecución</a></li>
+                  <li><a href="#internacionalizacion-transform-mode" @click=${this._onLinkClick}>Modo Transformación</a></li>
+                  <li><a href="#internacionalizacion-cli-config" @click=${this._onLinkClick}>CLI y Configuración</a></li>
+                  <li><a href="#internacionalizacion-best-practices" @click=${this._onLinkClick}>Buenas prácticas</a></li>
+                </ol>
+              </li>
             </ol>
           </li>
           <li><a href="#lit-vs-stencil" @click=${this._onLinkClick}>Lit vs Stencil</a></li>

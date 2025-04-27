@@ -19,7 +19,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    // "noUncheckedSideEffectImports": true --> rompe lit-localize extract por versiones de ts (https://github.com/lit/lit/issues/4848)
   },
   "include": ["src"]
 }

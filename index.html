@@ -10,5 +10,18 @@
   </head>
   <body>
     <my-element />
+    <script>
+      window.addEventListener('lit-localize-status', ({ detail }) => {
+        if (detail.status === 'loading') {
+          console.log(`Cargando nuevo locale: ${detail.loadingLocale}`);
+        } else if (detail.status === 'ready') {
+          console.log(`Nuevo locale cargado: ${detail.readyLocale}`);
+        } else if (detail.status === 'error') {
+          console.error(
+            `Error cargando locale ${detail.errorLocale}: ` + detail.errorMessage
+          );
+        }
+      });
+    </script>
   </body>
 </html>
