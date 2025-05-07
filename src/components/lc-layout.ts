@@ -17,13 +17,17 @@ export class LcLayout extends LitElement {
     }
   `;
 
+  private _prefersReducedMotion(): boolean {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
   private _onTocLinkClick(e: CustomEvent) {
     const id = e.detail.id;
     const main = this.renderRoot.querySelector('lc-main') as HTMLElement & { shadowRoot: ShadowRoot };
     if (main && main.shadowRoot) {
       const el = main.shadowRoot.getElementById(id);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
+        el.scrollIntoView({ behavior: this._prefersReducedMotion() ? 'auto' : 'smooth' });
       }
     }
   }
@@ -31,7 +35,7 @@ export class LcLayout extends LitElement {
   private _onTocFabClick() {
     const toc = this.renderRoot.querySelector('lc-table-of-content') as HTMLElement;
     if (toc) {
-      toc.scrollIntoView({ behavior: 'smooth' });
+      toc.scrollIntoView({ behavior: this._prefersReducedMotion() ? 'auto' : 'smooth' });
     }
   }
 

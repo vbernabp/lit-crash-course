@@ -40,6 +40,7 @@ export const componentesPropiedadesReactivasSection = html`
       ['type', 'String', 'Tipo usado para convertir entre atributo (string) y propiedad.'],
       ['useDefault', 'false', 'Evita la reflexión inicial del valor por defecto y resetea la propiedad si se elimina el atributo.'],
     ]}
+    caption="Opciones de configuración de propiedades reactivas en Lit"
   ></lc-table>
   <p>Cuando una propiedad cambia, ocurre la siguiente secuencia:</p>
   <ol>

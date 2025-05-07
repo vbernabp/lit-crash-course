@@ -21,14 +21,23 @@ export class LcTable extends LitElement {
     th {
       background: #f5f5f5;
     }
+    caption {
+      caption-side: bottom;
+      text-align: left;
+      font-size: 0.95em;
+      color: #666;
+      padding-top: 0.5rem;
+    }
   `;
 
   @property({ type: Array }) columns: string[] = [];
   @property({ type: Array }) rows: string[][] = [];
+  @property({ type: String }) caption: string = '';
 
   render() {
     return html`
       <table>
+        ${this.caption !== '' ? html`<caption>${this.caption}</caption>` : ''}
         <thead>
           <tr>
             ${this.columns.map((col: string) => html`<th>${col}</th>`)}

@@ -15,6 +15,7 @@ export const litVsStencilSection = html`
       ['SSR (Server Side Rendering)', 'Soporte con librerías oficiales', 'Soporte integrado'],
       ['Uso recomendado', 'Componentes ligeros, integración progresiva, sistemas de diseño simples', 'Librerías de componentes para grandes organizaciones, design systems complejos, integración multiplataforma'],
     ]}
+    caption="Comparativa de características entre Lit y Stencil"
   ></lc-table>
   <h3>¿Cuándo elegir Lit?</h3>
   <ul>
