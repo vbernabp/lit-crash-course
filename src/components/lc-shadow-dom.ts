@@ -41,7 +41,7 @@ export class LcShadowDom extends LitElement {
   `
 
   protected firstUpdated() {
-    console.log('Elementos en el slot extra:', this.extraSlotElements)
+    // console.log('Elementos en el slot extra:', this.extraSlotElements)
   }
 
   render() {
