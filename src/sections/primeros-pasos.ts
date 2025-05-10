@@ -7,5 +7,5 @@ export const primerosPasosSection = html`
   <lc-code-block>
     <pre><code>npm install lit</code></pre>
   </lc-code-block>
-  <a href="https://lit.dev/docs/getting-started/" target="_blank">Más información sobre primeros pasos</a>
+  <a href="https://lit.dev/docs/getting-started/" target="_blank" rel="noopener noreferrer">Más información sobre primeros pasos</a>
 `

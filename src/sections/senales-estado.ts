@@ -5,5 +5,5 @@ export const senalesEstadoSection = html`
   <p>Las señales son útiles para modelar y gestionar estado compartido y observable entre muchos componentes. Cuando una señal se actualiza, todos los componentes que la usan o dependen de ella se actualizan automáticamente.</p>
   <p>Lit integra señales a través del paquete experimental @lit-labs/signals, compatible con la propuesta TC39 para estandarizar señales en JavaScript. Se pueden usar señales para lograr reactividad granular, optimizar actualizaciones y facilitar la interoperabilidad entre librerías y frameworks.</p>
   <p>Lit ofrece utilidades como SignalWatcher, la directiva watch y una versión especial de html para plantillas que usan señales. Estas herramientas permiten que los componentes reaccionen automáticamente a los cambios de las señales y optimicen el renderizado.</p>
-  <a href="https://lit.dev/docs/data/signals/" target="_blank">Más información sobre señales</a>
+  <a href="https://lit.dev/docs/data/signals/" target="_blank" rel="noopener noreferrer">Más información sobre señales</a>
 `

@@ -11,7 +11,7 @@ export const componentesEstilosSection = html`
   <p>Para personalizar estilos de forma dinámica, se pueden usar variables CSS (custom properties) y los selectores <lc-code>:host</lc-code> y <lc-code>:host()</lc-code>. Además, Lit ofrece directivas como <lc-code>classMap</lc-code> y <lc-code>styleMap</lc-code> para aplicar clases y estilos dinámicos en la plantilla.</p>
   <p>El uso de CSS custom properties facilita la creación de componentes tematizables y la personalización de estilos desde fuera del componente.</p>
   <lc-estilos-wrapper></lc-estilos-wrapper>
-  <p><a href="https://lit.dev/docs/components/styles/" target="_blank" rel="noopener">Más información sobre estilos</a></p>
+  <p><a href="https://lit.dev/docs/components/styles/" target="_blank" rel="noopener noreferrer">Más información sobre estilos</a></p>
 `
 
 @customElement('lc-estilos-wrapper')

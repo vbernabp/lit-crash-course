@@ -9,5 +9,5 @@ export const internacionalizacionBestPracticesSection = html`
     <li>Evitar introducir marcado html innecesario en la función msg.</li>
   </ul>
   <lc-localization></lc-localization>
-  <a href="https://lit.dev/docs/localization/best-practices/" target="_blank">Más información sobre buenas prácticas</a>
+  <a href="https://lit.dev/docs/localization/best-practices/" target="_blank" rel="noopener noreferrer">Más información sobre buenas prácticas</a>
 `

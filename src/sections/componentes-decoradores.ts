@@ -16,5 +16,5 @@ export const componentesDecoradoresSection = html`
   ]} caption="Decoradores principales de Lit y su función"></lc-table>
   <p>Los decoradores pueden importarse desde <lc-code>'lit/decorators.js'</lc-code> o individualmente. Para usarlos es necesario compilar el código con TypeScript o Babel, ya que los navegadores aún no los soportan de forma nativa. Se recomienda usar decoradores experimentales de TypeScript para un mejor resultado en la compilación.</p>
   <p>Lit soporta tanto la versión experimental como la estándar de la propuesta de decoradores en JavaScript. La versión estándar requiere el uso de la palabra clave <lc-code>accessor</lc-code> en las propiedades decoradas.</p>
-  <a href="https://lit.dev/docs/components/decorators/" target="_blank">Más información sobre decoradores</a>
+  <a href="https://lit.dev/docs/components/decorators/" target="_blank" rel="noopener noreferrer">Más información sobre decoradores</a>
 `

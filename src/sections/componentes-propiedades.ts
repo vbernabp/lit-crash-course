@@ -115,7 +115,7 @@ get roundedCount() { return this._rounded; }</code></pre>
   </lc-code-block>
   <p>No es necesario usar <lc-code>noAccessor</lc-code> si se definen accessors personalizados en la propia clase.</p>
   <lc-properties-wrapper></lc-properties-wrapper>
-  <p><a href="https://lit.dev/docs/components/properties/" target="_blank" rel="noopener">Más información sobre propiedades reactivas</a></p>
+  <p><a href="https://lit.dev/docs/components/properties/" target="_blank" rel="noopener noreferrer">Más información sobre propiedades reactivas</a></p>
 `;
 
 @customElement('lc-properties-wrapper')

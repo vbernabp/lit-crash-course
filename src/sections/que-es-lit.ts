@@ -27,9 +27,9 @@ export const queEsLitSection = html`
     <p>El componente lc-footer es un ejemplo sencillo de Web Component hecho con Lit.</p>
   </lc-note>
   <div>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates" target="_blank">Tagged Templates</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates" target="_blank" rel="noopener noreferrer">Tagged Templates</a>
   </div>
   <div>
-    <a href="https://lit.dev/docs/" target="_blank">Más información sobre Lit</a>
+    <a href="https://lit.dev/docs/" target="_blank" rel="noopener noreferrer">Más información sobre Lit</a>
   </div>
 `

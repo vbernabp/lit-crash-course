@@ -34,5 +34,5 @@ declare global {
     <pre><code>const myElement = document.createElement('my-element');
 myElement.aNumber = 10;</code></pre>
   </lc-code-block>
-  <a href="https://lit.dev/docs/components/defining/" target="_blank">Más información sobre la definición de un componente</a>
+  <a href="https://lit.dev/docs/components/defining/" target="_blank" rel="noopener noreferrer">Más información sobre la definición de un componente</a>
 `

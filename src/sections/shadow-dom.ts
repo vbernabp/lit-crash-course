@@ -14,5 +14,5 @@ export const shadowDomSection = html`
       <option value="shadow-dom-example-2">Opción 2</option>
     </select>
   </div>
-  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components/Using_shadow_DOM" target="_blank">Más información sobre Shadow DOM</a>
+  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components/Using_shadow_DOM" target="_blank" rel="noopener noreferrer">Más información sobre Shadow DOM</a>
 `

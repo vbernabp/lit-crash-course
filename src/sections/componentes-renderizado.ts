@@ -12,5 +12,5 @@ export const componentesRenderizadoSection = html`
   <lc-note>
     <p>El componente lc-footer se puede utilizar para probar el método <lc-code>render</lc-code>.</p>
   </lc-note>
-  <a href="https://lit.dev/docs/components/rendering/" target="_blank">Más información sobre renderizado</a>
+  <a href="https://lit.dev/docs/components/rendering/" target="_blank" rel="noopener noreferrer">Más información sobre renderizado</a>
 `

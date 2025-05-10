@@ -11,7 +11,7 @@ export const componentesEventosSection = html`
   <p>Para emitir eventos personalizados, se utiliza dispatchEvent con instancias de CustomEvent. Es importante configurar correctamente las opciones de burbujeo y composición para que los eventos puedan atravesar el shadow DOM y ser escuchados desde el exterior.</p>
   <p>Lit facilita la comunicación entre componentes y la integración con otras partes de la aplicación mediante el uso de eventos estándar y personalizados.</p>
   <lc-events-wrapper></lc-events-wrapper>
-  <a href="https://lit.dev/docs/components/events/" target="_blank">Más información sobre eventos</a>
+  <a href="https://lit.dev/docs/components/events/" target="_blank" rel="noopener noreferrer">Más información sobre eventos</a>
 `
 
 @customElement('lc-events-wrapper')

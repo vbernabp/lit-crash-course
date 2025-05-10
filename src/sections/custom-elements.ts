@@ -8,5 +8,5 @@ export const customElementsSection = html`
   <lc-note>
     <p>Este componente es un Custom Element.</p>
   </lc-note>
-  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components/Using_custom_elements" target="_blank">Más información sobre Custom Elements</a>
+  <a href="https://developer.mozilla.org/es/docs/Web/Web_Components/Using_custom_elements" target="_blank" rel="noopener noreferrer">Más información sobre Custom Elements</a>
 `

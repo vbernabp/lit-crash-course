@@ -13,5 +13,5 @@ export const internacionalizacionIntroduccionSection = html`
     <li>Ejecutar <lc-code>lit-localize build</lc-code> para generar una versión localizada de las cadenas y plantillas.</li>
     <li>Añadir la lógica para cambiar entre idiomas.</li>
   </ol>
-  <a href="https://lit.dev/docs/localization/overview/" target="_blank">Más información sobre la introducción a la internacionalización</a>
+  <a href="https://lit.dev/docs/localization/overview/" target="_blank" rel="noopener noreferrer">Más información sobre la introducción a la internacionalización</a>
 `
