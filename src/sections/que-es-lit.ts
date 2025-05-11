@@ -13,7 +13,7 @@ export const queEsLitSection = html`
     <li>Propiedades reactivas que actualizan automáticamente el renderizado.</li>
     <li>Estilos encapsulados por defecto.</li>
     <li>Funciona tanto con JavaScript como con TypeScript.</li>
-    <li>No requiere compilación durante el desarrollo y tiene soporte de IDE y herramientas de producción.</li>
+    <li>No requiere compilación durante el desarrollo y tiene soporte de <abbr title="Integrated Development Environment">IDE</abbr> y herramientas de producción.</li>
   </ul>
   <p>Ventajas principales:</p>
   <ul>

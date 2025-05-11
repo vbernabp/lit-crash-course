@@ -8,7 +8,7 @@ export const internacionalizacionIntroduccionSection = html`
   <ol>
     <li>Envolver una cadena o plantilla en la función <lc-code>msg</lc-code>.</li>
     <li>Crear un archivo de configuración <lc-code>lit-localize.json</lc-code>.</li>
-    <li>Ejecutar <lc-code>lit-localize extract</lc-code> para generar un archivo XLIFF.</li>
+    <li>Ejecutar <lc-code>lit-localize extract</lc-code> para generar un archivo <abbr title="XML Localization Interchange File Format">XLIFF</abbr>.</li>
     <li>Editar el archivo XLIFF generado para agregar una etiqueta <lc-code>&lt;target&gt;</lc-code> de traducción.</li>
     <li>Ejecutar <lc-code>lit-localize build</lc-code> para generar una versión localizada de las cadenas y plantillas.</li>
     <li>Añadir la lógica para cambiar entre idiomas.</li>

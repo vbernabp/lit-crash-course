@@ -9,7 +9,7 @@ export const componentesPropiedadesReactivasSection = html`
   <h4>2.3.3 Propiedades Reactivas</h4>
   <p>Las propiedades reactivas en Lit permiten que los componentes respondan automáticamente a los cambios de datos. Cuando una propiedad reactiva cambia, el componente se vuelve a renderizar para reflejar el nuevo estado.</p>
   <p>Se pueden declarar propiedades reactivas utilizando decoradores o la propiedad estática <strong>properties</strong>. Estas propiedades pueden sincronizarse con atributos HTML, reflejar su valor en los atributos y definir su tipo para conversión automática.</p>
-  <p>Las propiedades públicas deben usarse como API de entrada del componente. El componente no debe modificar sus propias propiedades públicas salvo en respuesta a la interacción del usuario, y debe notificar los cambios mediante eventos personalizados.</p>
+  <p>Las propiedades públicas deben usarse como <abbr title="Application Programming Interface">API</abbr> de entrada del componente. El componente no debe modificar sus propias propiedades públicas salvo en respuesta a la interacción del usuario, y debe notificar los cambios mediante eventos personalizados.</p>
   <p>Para propiedades internas que no deben ser accedidas desde fuera del componente, se puede usar la opción <strong>state</strong> o el decorador correspondiente.</p>
   <lc-note>
     <p>En JavaScript hay que inicializar las propiedades en el constructor.</p>
