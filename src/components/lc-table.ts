@@ -31,7 +31,7 @@ export class LcTable extends LitElement {
   `;
 
   @property({ type: Array }) columns: string[] = [];
-  @property({ type: Array }) rows: string[][] = [];
+  @property({ type: Array }) rows: unknown[][] = [];
   @property({ type: String }) caption: string = '';
 
   render() {
@@ -44,9 +44,9 @@ export class LcTable extends LitElement {
           </tr>
         </thead>
         <tbody>
-          ${this.rows.map((row: string[]) => html`
+          ${this.rows.map((row: unknown[]) => html`
             <tr>
-              ${row.map((cell: string) => html`<td>${cell}</td>`)}
+              ${row.map((cell: unknown) => html`<td>${cell}</td>`)}
             </tr>
           `)}
         </tbody>
