@@ -1,8 +1,14 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import styles from '../styles/lc-table.module.css'
 
 @customElement('lc-table')
 export class LcTable extends LitElement {
+//   customStyles = `
+//   lc-table table {
+//     background-color: red;
+//   }
+// `;
   public static readonly styles = css`
     :host {
       display: block;
@@ -36,21 +42,37 @@ export class LcTable extends LitElement {
 
   render() {
     return html`
-      <table>
-        ${this.caption !== '' ? html`<caption>${this.caption}</caption>` : ''}
+      <!-- <style>
+        table {
+          background-color: red;
+        }
+      </style> -->
+      <table class="${styles.table}">
+        ${this.caption !== '' ? html`<caption class="${styles.caption}">${this.caption}</caption>` : ''}
         <thead>
           <tr>
-            ${this.columns.map((col: string) => html`<th>${col}</th>`)}
+            ${this.columns.map((col: string) => html`<th class="${styles.th}">${col}</th>`)}
           </tr>
         </thead>
         <tbody>
           ${this.rows.map((row: unknown[]) => html`
             <tr>
-              ${row.map((cell: unknown) => html`<td>${cell}</td>`)}
+              ${row.map((cell: unknown) => html`<td class="${styles.td}">${cell}</td>`)}
             </tr>
           `)}
         </tbody>
       </table>
     `;
   }
+
+  // connectedCallback(): void {
+  //   super.connectedCallback();
+  //   const style = document.createElement('style');
+  //   style.textContent = this.customStyles;
+  //   this.appendChild(style);
+  // }
+
+  // protected createRenderRoot() {
+  //   return this;
+  // }
 }

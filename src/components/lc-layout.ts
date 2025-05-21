@@ -42,7 +42,9 @@ export class LcLayout extends LitElement {
   render() {
     return html`
       <div class="container" @toc-link-click=${this._onTocLinkClick} @toc-fab-click=${this._onTocFabClick}>
-        <lc-header></lc-header>
+        <lc-header>
+          <h1>Fundamentos de Web Components y Lit</h1>
+        </lc-header>
         <lc-table-of-content></lc-table-of-content>
         <lc-main>
           <p>Fundamentos de Web Components y Lit</p>

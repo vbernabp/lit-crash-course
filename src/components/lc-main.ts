@@ -68,6 +68,9 @@ export class LcMain extends LitElement {
     main h2, main h3 {
       margin-top: 2rem;
     }
+    /* table {
+      background-color: red;
+    } */
   `;
 
   render() {

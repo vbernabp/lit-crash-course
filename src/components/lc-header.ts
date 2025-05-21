@@ -3,7 +3,7 @@ import { customElement } from 'lit/decorators.js';
 
 @customElement('lc-header')
 export class LcHeader extends LitElement {
-  static styles = css`
+  static readonly styles = css`
     header {
       padding: 1rem;
       text-align: center;
@@ -11,6 +11,6 @@ export class LcHeader extends LitElement {
   `;
 
   render() {
-    return html`<header><h1>Fundamentos de Web Components y Lit</h1></header>`;
+    return html`<header><slot></slot></header>`;
   }
 }
