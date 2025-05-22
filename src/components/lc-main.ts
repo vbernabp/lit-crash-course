@@ -52,6 +52,8 @@ import { internacionalizacionRuntimeModeSection } from '../sections/internaciona
 import { internacionalizacionTransformModeSection } from '../sections/internacionalizacion-transform-mode';
 import { internacionalizacionCliConfigSection } from '../sections/internacionalizacion-cli-config';
 import { internacionalizacionBestPracticesSection } from '../sections/internacionalizacion-best-practices';
+import { frameworksSection } from '../sections/frameworks';
+import { frameworksReactSection } from '../sections/frameworks-react';
 import './lc-section';
 import './lc-code'
 
@@ -207,6 +209,12 @@ export class LcMain extends LitElement {
         </lc-section>
         <lc-section id="ssr-dom-emulacion">
           ${ssrDomEmulacionSection}
+        </lc-section>
+        <lc-section id="frameworks">
+          ${frameworksSection}
+        </lc-section>
+        <lc-section id="frameworks-react">
+          ${frameworksReactSection}
         </lc-section>
         <lc-section id="internacionalizacion">
           ${internacionalizacionSection}
