@@ -20,4 +20,7 @@ export const preguntasRespuestasSection = html`
   <lc-question question="¿Tiene algún tipo de carga Lazy? Es decir que hasta que no aparezca la etiqueta no se descargue el código del WC.">
     <p>Lazy loading no es una característica que ofrece Lit, aunque se puede emular con dynamic imports y los IntersectionObserver. Se puede ver un ejemplo en el componente lc-layout.</p>
   </lc-question>
+  <lc-question question="¿Cómo trabaja Lit la capacidad de extender componentes?">
+    <p>Se puede ver un ejemplo en el componente lc-estilos.</p>
+  </lc-question>
 `
