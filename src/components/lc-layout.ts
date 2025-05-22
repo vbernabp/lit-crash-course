@@ -1,7 +1,6 @@
 import { LitElement, html, css } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, state } from 'lit/decorators.js';
 import './lc-header.js';
-import './lc-main.js';
 import './lc-footer.js';
 import './lc-table-of-content.js';
 import './lc-toc-fab.js';
@@ -15,7 +14,42 @@ export class LcLayout extends LitElement {
       padding: 0 1rem;
       box-sizing: border-box;
     }
+    .main-placeholder {
+      min-height: 8rem;
+    }
   `;
+
+  static lazyLoadMain = false;
+
+  @state()
+  private _mainVisible = false;
+
+  private _mainObserver?: IntersectionObserver;
+
+  firstUpdated() {
+    if ((this.constructor as typeof LcLayout).lazyLoadMain) {
+      const mainPlaceholder = this.renderRoot.querySelector('.main-placeholder');
+      if (mainPlaceholder) {
+        this._mainObserver = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              import('./lc-main.js').then(() => {
+                this._mainVisible = true;
+              });
+              if (this._mainObserver) {
+                this._mainObserver.disconnect();
+              }
+            }
+          });
+        }, { rootMargin: '1px' });
+        this._mainObserver.observe(mainPlaceholder);
+      }
+    } else {
+      import('./lc-main.js').then(() => {
+        this._mainVisible = true;
+      });
+    }
+  }
 
   private _prefersReducedMotion(): boolean {
     return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -46,9 +80,12 @@ export class LcLayout extends LitElement {
           <h1>Fundamentos de Web Components y Lit</h1>
         </lc-header>
         <lc-table-of-content></lc-table-of-content>
-        <lc-main>
-          <p>Fundamentos de Web Components y Lit</p>
-        </lc-main>
+        ${this._mainVisible
+          ? html`<lc-main>
+              <p>Fundamentos de Web Components y Lit</p>
+            </lc-main>`
+          : html`<div class="main-placeholder"></div>`
+        }
         <lc-footer></lc-footer>
         <lc-toc-fab></lc-toc-fab>
       </div>

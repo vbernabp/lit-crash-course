@@ -17,4 +17,7 @@ export const preguntasRespuestasSection = html`
     <p>Existen varias opciones si se tiene el control de la página web y todos los componentes web carecen de Shadow DOM, como por ejemplo CSS Modules, PostCSS, clases usando BEM...</p>
     <p>Si no se cumple con esos requisitos, como por ejemplo querer publicar un componente web en npm sin Shadow DOM y que este sea consumido por una applicación web manteniendo los estilos encapsulados, entonces se puede requerir a otras técnicas como <strong>inyección de estilos</strong>, <strong>estilos directamente en el template</strong> o custom properties de CSS.</p>
   </lc-question>
+  <lc-question question="¿Tiene algún tipo de carga Lazy? Es decir que hasta que no aparezca la etiqueta no se descargue el código del WC.">
+    <p>Lazy loading no es una característica que ofrece Lit, aunque se puede emular con dynamic imports y los IntersectionObserver. Se puede ver un ejemplo en el componente lc-layout.</p>
+  </lc-question>
 `
