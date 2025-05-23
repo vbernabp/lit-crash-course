@@ -2,6 +2,8 @@ import { html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { msg, localized, configureLocalization } from '@lit/localize';
 import { sourceLocale, targetLocales } from '../generated/locale-codes.ts';
+import { consume } from '@lit/context';
+import { localeContext } from '../contexts/locale-context';
 
 export const {getLocale, setLocale} = configureLocalization({
   sourceLocale,
@@ -12,6 +14,9 @@ export const {getLocale, setLocale} = configureLocalization({
 @customElement('lc-localization')
 @localized()
 export class LcLocalization extends LitElement {
+  @consume({ context: localeContext, subscribe: true })
+  locale?: string;
+
   render() {
     return html`
     <div lang=${getLocale()}>
@@ -30,6 +35,12 @@ export class LcLocalization extends LitElement {
   }
 
   private _onLanguageChange(event: Event) {
-    setLocale((event.target as HTMLSelectElement).value);
+    const newLocale = (event.target as HTMLSelectElement).value;
+    setLocale(newLocale);
+    this.dispatchEvent(new CustomEvent('locale-changed', {
+      detail: newLocale,
+      bubbles: true,
+      composed: true
+    }));
   }
 }
